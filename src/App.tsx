@@ -1,8 +1,8 @@
-import { useEffect } from 'react'
+import { PropsWithChildren, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { pb } from './store/pocketbase'
 
-function App(props: { children?: React.ReactElement[] }) {
+function App(props: PropsWithChildren) {
   const navigate = useNavigate()
 
   useEffect(() => {
